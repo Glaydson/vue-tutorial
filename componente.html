@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        
+        <div id="app-7">
+		  <ol>
+			<!--
+			  Agora nós dotamos cada tarefa com o item que ela está
+			  representando, de forma que seu conteúdo possa ser dinâmico.
+			  Também precisamos dotar cada componente com uma chave, que
+			  veremos posteriormente.
+			-->
+			<item-tarefa
+			  v-for="item in listaCompras"
+			  v-bind:tarefa="item"
+			  v-bind:key="item.id">
+			</item-tarefa>
+		  </ol>
+		</div>
+
+            
+        <script src="componente.js"></script>
+    </body>
+</html>

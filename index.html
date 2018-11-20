@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        
+        <div id="app">
+            {{mensagem}}
+        </div>
+		
+		<div id="app-2">
+			<span v-bind:title="mensagem">
+				Passe o mouse sobre mim por alguns segundos 
+				para ver meu título dinâmico!
+			</span>
+		</div>
+		
+		<div id="app-3">
+			<span v-if="vendo">Agora você me vê</span>
+		</div>
+		
+		<div id="app-4">
+			<ol>
+				<li v-for="tarefa in tarefas">
+				  {{ tarefa.texto }}
+				</li>
+			</ol>
+		</div>
+		
+		<div id="app-5">
+			<p>{{ mensagem }}</p>
+			<button v-on:click="inverteMensagem">Inverte Mensagem</button>
+		</div>
+		
+		<div id="app-6">
+			<p>{{ mensagem }}</p>
+			<input v-model="mensagem">
+		</div>
+            
+        <script src="index.js"></script>
+    </body>
+</html>
