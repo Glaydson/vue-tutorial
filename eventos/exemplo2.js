@@ -7,7 +7,7 @@ var example2 = new Vue({
   methods: {
     cumprimentar: function (evento) {
       // `this` dentro de métodos aponta para a instância Vue
-      alert('Olá ' + this.name + '!')
+      alert('Olá ' + this.nome + '!')
       // `event` é o evento DOM nativo
       if (evento) {
         alert(evento.target.tagName)
