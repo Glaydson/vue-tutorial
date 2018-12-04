@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div v-if="tipo === 'A'">
+        A
+      </div>
+      <div v-else-if="tipo === 'B'">
+        B
+      </div>
+      <div v-else-if="tipo === 'C'">
+        C
+      </div>
+      <div v-else>
+        Não é A, B ou C
+      </div>
+      
+    </div>
+
+    <script src="exemplo-3.js"></script>
+  </body>
+</html>

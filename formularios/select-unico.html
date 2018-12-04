@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <div id="select-unico">
+    <select v-model="selected">
+      <option disabled value="">Escolha um item</option>
+      <option>A</option>
+      <option>B</option>
+      <option>C</option>
+    </select>
+    <br />
+    <span>Selecionado: {{ selected }}</span>
+  </div>
+  <script src="select-unico.js"></script>
+</html>

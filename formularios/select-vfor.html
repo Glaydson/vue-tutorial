@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <div id="select-vfor">
+    <select v-model="selected">
+      <option v-for="option in options" v-bind:value="option.value">
+        {{ option.text }}
+      </option>
+    </select>
+    <br />
+    <span>Selecionado: {{ selected }}</span>
+  </div>
+  <script src="select-vfor.js"></script>
+</html>

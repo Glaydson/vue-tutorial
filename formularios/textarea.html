@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <div id="textarea">
+    <span>Mensagem com múltiplas linhas:</span>
+    <p style="white-space: pre-line;">{{ mensagem }}</p>
+    <br />
+    <textarea v-model="mensagem" placeholder="Escreva bastante"></textarea>
+  </div>
+  <script src="textarea.js"></script>
+</html>
